@@ -59,6 +59,10 @@
   text-align: center;
 }
 
+.text-short {
+  max-width: 50ch;
+}
+
 .text-sm {
   font-size: var(--fs-small);
 }

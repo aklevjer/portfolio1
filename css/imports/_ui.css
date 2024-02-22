@@ -14,7 +14,7 @@ header {
   z-index: 1;
 
   & .container {
-    min-height: var(--height-header);
+    height: var(--height-header);
   }
 }
 

@@ -15,9 +15,11 @@
   --ff-primary: "Poppins", Helvetica, Verdana, sans-serif;
 
   --fs-small: 0.9375rem;
-  --fs-large: 1.9rem;
+  --fs-large: 2rem;
+  --fs-xl: 2.3rem;
 
   --fw-medium: 500;
+  --fw-semibold: 600;
 
   --space-0-3: 0.3rem;
   --space-0-5: 0.5rem;
@@ -80,12 +82,18 @@ body {
 }
 
 main > * {
-  padding-bottom: 5rem;
+  padding-block: 7rem;
 }
 
 h2,
 h3 {
+  font-weight: var(--fw-semibold);
   text-transform: capitalize;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: var(--fs-xl);
 }
 
 i {
@@ -106,6 +114,7 @@ p {
   text-transform: capitalize;
   transition: color var(--tr-linear), background-color var(--tr-linear);
 }
+
 .current,
 .current:is(:hover, :focus),
 .link-hover:is(:hover, :focus) {
@@ -113,7 +122,7 @@ p {
 }
 
 .btn {
-  padding: var(--space-1) var(--space-0-5);
+  padding: var(--space-0-5) var(--space-1);
   color: inherit;
   cursor: pointer;
   border: none;
@@ -123,6 +132,10 @@ p {
   &:active {
     transform: scale(0.95);
   }
+}
+
+.btn--orange {
+  border: var(--border) var(--clr-orange);
 }
 
 .btn--burger {
