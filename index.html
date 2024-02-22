@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore the diverse portfolio of Aleksander Klevjer. Learn more about him, discover web development projects, and get in touch." />
+    <title>Aleksander Klevjer - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="/js/index.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container flex items-center justify-between">
+        <h1>
+          <a href="/" class="text-white">AK<span class="text-orange">.</span></a>
+        </h1>
+
+        <nav class="header__nav">
+          <ul>
+            <li><a href="#home" class="link-hover current">Home</a></li>
+            <li><a href="#about" class="link-hover">About</a></li>
+            <li><a href="#projects" class="link-hover">Projects</a></li>
+            <li><a href="#contact" class="link-hover">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="btn--burger btn" aria-expanded="false" aria-label="Menu">
+          <i class="bx bx-menu bx-sm"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="home">
+        <h2>Hello there!, I'm Aleksander<span class="text-orange">.</span></h2>
+      </section>
+
+      <section id="about">
+        <h2 class="text-center">About me</h2>
+      </section>
+
+      <section id="projects">
+        <h2 class="mb-2 text-center">Projects</h2>
+
+        <ul class="projects__cards grid gap-2">
+          <li class="projects__cards__card rounded-corners">
+            <img src="https://sinnsykt.net/screenshots/shutter-journey-screen.png" alt="Screen shot of Shutter Journey website" />
+
+            <div class="flow">
+              <h3>Shutter journey</h3>
+              <p>A photography blog with gear reviews, guides, and tips. Developed for Noroff's Project Exam 1 using HTML, CSS, and JavaScript. Powered by WordPress as a headless CMS.</p>
+
+              <a href="https://shutter-journey.netlify.app/" target="_blank" class="link-hover flex items-center gap-0-5">
+                <i class="bx bx-world bx-sm"></i>
+                <span>Live site</span>
+              </a>
+
+              <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-aklevjer" target="_blank" class="link-hover flex items-center gap-0-5">
+                <i class="bx bxl-github bx-sm"></i>
+                <span>Github repository</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="projects__cards__card rounded-corners">
+            <img src="https://sinnsykt.net/screenshots/rainy-days-screen.png" alt="Screen shot of Rainy Days website" />
+
+            <div class="flow">
+              <h3>Rainy days</h3>
+              <p>An e-commerce site for Rainy Days - a cross-course project at Noroff. Designed in Figma and developed with HTML, CSS, and JavaScript. Powered by WordPress (WooCommerce) as a headless CMS.</p>
+
+              <a href="https://rainy-days-ak.netlify.app/" target="_blank" class="link-hover flex items-center gap-0-5">
+                <i class="bx bx-world bx-sm"></i>
+                <span>Live site</span>
+              </a>
+
+              <a href="https://github.com/Noroff-FEU-Assignments/cross-course-project-aklevjer" target="_blank" class="link-hover flex items-center gap-0-5">
+                <i class="bx bxl-github bx-sm"></i>
+                <span>Github repository</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="projects__cards__card rounded-corners">
+            <img src="https://sinnsykt.net/screenshots/csm-screen.png" alt="Screen shot of Community Science Museum website" />
+
+            <div class="flow">
+              <h3>Community science museum</h3>
+              <p>A responsive website for the Community Science Museum developed during Semester 1 at Noroff. Tailored for primary and middle school children.</p>
+
+              <a href="https://csm-ak.netlify.app/" target="_blank" class="link-hover flex items-center gap-0-5">
+                <i class="bx bx-world bx-sm"></i>
+                <span>Live site</span>
+              </a>
+
+              <a href="https://github.com/aklevjer/community-science-museum-sp1" target="_blank" class="link-hover flex items-center gap-0-5">
+                <i class="bx bxl-github bx-sm"></i>
+                <span>Github repository</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2 class="text-center">Contact</h2>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container grid place-items-center gap-0-5">
+        <ul class="flex items-center gap-1-5">
+          <li>
+            <a href="#" class="link-hover" aria-label="Github">
+              <i class="bx bxl-github"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="link-hover" aria-label="LinkedIn">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="link-hover" aria-label="Facebook">
+              <i class="bx bxl-facebook-circle"></i>
+            </a>
+          </li>
+        </ul>
+
+        <p class="text-sm text-center">&copy; Copyright 2024. Aleksander Klevjer</p>
+      </div>
+    </footer>
+  </body>
+</html>

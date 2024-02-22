@@ -1,0 +1,58 @@
+/* -------------------------------------------- */
+/*                Header & Footer               */
+/* -------------------------------------------- */
+
+header,
+footer {
+  background-color: var(--clr-gray);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  border-bottom: var(--border) var(--clr-light-gray);
+  z-index: 1;
+
+  & .container {
+    min-height: var(--height-header);
+  }
+}
+
+footer {
+  padding-block: var(--space-1);
+  border-top: var(--border) var(--clr-light-gray);
+}
+
+/* -------------------------------------------- */
+/*               Header Navigation              */
+/* -------------------------------------------- */
+
+.header__nav {
+  position: absolute;
+  top: calc(var(--height-header) - var(--space-0-5));
+  left: 0;
+  width: 100%;
+  background-color: var(--clr-gray);
+  z-index: 2;
+
+  & li {
+    height: 0;
+    line-height: var(--space-2-5);
+    text-align: center;
+    overflow: hidden;
+    transition: height var(--tr-ease);
+  }
+}
+
+.header__nav--open {
+  border-bottom: var(--border) var(--clr-light-gray);
+
+  & li {
+    height: var(--space-2-5);
+    overflow: visible;
+  }
+
+  & li:last-child {
+    margin-bottom: var(--space-0-5);
+  }
+}

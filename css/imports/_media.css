@@ -1,0 +1,29 @@
+/* -------------------------------------------- */
+/*                  Media Query                 */
+/* -------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* ------------------ Header ------------------ */
+
+  .header__nav {
+    position: static;
+    width: fit-content;
+    border: 0;
+
+    & ul {
+      display: flex;
+      gap: var(--space-1-5);
+
+      & li {
+        height: auto !important;
+        margin: 0 !important;
+        overflow: visible;
+        transition: none;
+      }
+    }
+  }
+
+  .btn--burger {
+    display: none;
+  }
+}
