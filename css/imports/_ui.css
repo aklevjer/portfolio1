@@ -94,4 +94,19 @@ footer {
   & div:first-of-type {
     grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
   }
+
+  & .error-border {
+    outline-color: var(--clr-red);
+    border-color: var(--clr-red);
+  }
+
+  & .error-msg {
+    margin-top: var(--space-0-3);
+    font-size: var(--fs-small);
+    color: var(--clr-red);
+  }
+
+  & .success-msg {
+    color: var(--clr-green);
+  }
 }

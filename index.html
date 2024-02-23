@@ -118,7 +118,7 @@
             </h3>
             <p>Feel free to contact me using the form or hit me up on social media if you have any questions.</p>
 
-            <ul class="flex items-center gap-1">
+            <ul class="flex gap-1">
               <li>
                 <a href="https://github.com/aklevjer" target="_blank" class="link-hover" aria-label="Github">
                   <i class="bx bxl-github bx-tada-hover"></i>
@@ -144,25 +144,46 @@
               <div>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Name" />
+
+                <p class="error-msg items-center gap-0-3 hidden">
+                  <i class="bx bx-error bx-xs"></i>
+                  <span> Must be at least 5 characters</span>
+                </p>
               </div>
 
               <div>
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="email@example.com" />
+
+                <p class="error-msg items-center gap-0-3 hidden">
+                  <i class="bx bx-error bx-xs"></i>
+                  <span>Must be a valid email address</span>
+                </p>
               </div>
             </div>
 
             <div>
               <label for="subject">Subject</label>
               <input type="text" id="subject" name="subject" placeholder="Subject" />
+
+              <p class="error-msg items-center gap-0-3 hidden">
+                <i class="bx bx-error bx-xs"></i>
+                <span>Must be at least 15 characters</span>
+              </p>
             </div>
 
             <div>
               <label for="message">Message</label>
               <textarea id="message" name="message" placeholder="Message"></textarea>
+
+              <p class="error-msg items-center gap-0-3 hidden">
+                <i class="bx bx-error bx-xs"></i>
+                <span>Must be at least 25 characters</span>
+              </p>
             </div>
 
             <input type="submit" value="Send message" class="btn btn--orange" />
+            <p class="success-msg"></p>
           </form>
         </div>
       </section>

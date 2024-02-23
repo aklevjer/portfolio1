@@ -11,6 +11,10 @@
   display: block;
 }
 
+.hidden {
+  display: none;
+}
+
 .flex {
   display: flex;
 }
@@ -29,6 +33,10 @@
 
 .place-items-center {
   place-items: center;
+}
+
+.gap-0-3 {
+  gap: var(--space-0-3);
 }
 
 .gap-0-5 {

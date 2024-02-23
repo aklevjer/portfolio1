@@ -9,6 +9,8 @@
   --clr-soft-white: #e5e5e5;
   --clr-white: #ffffff;
   --clr-orange: #f06c3e;
+  --clr-red: #ff5a5a;
+  --clr-green: #40bf40;
 
   --clr-shadow: rgba(0, 0, 0, 0.5);
 
@@ -117,7 +119,7 @@ textarea {
   font-family: inherit;
   color: inherit;
   border-radius: var(--border-radius);
-  border: none;
+  border: var(--border) var(--clr-light-gray);
   background-color: var(--clr-light-gray);
 }
 
