@@ -34,7 +34,7 @@
   --tr-linear: 125ms linear;
   --tr-ease: 250ms ease;
 
-  --container-width: 1100px;
+  --container-width: 1000px;
   --screen-edge: var(--space-1);
   --height-header: 60px;
 }
