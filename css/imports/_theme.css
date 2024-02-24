@@ -9,14 +9,11 @@
   --clr-soft-white: #e5e5e5;
   --clr-white: #ffffff;
   --clr-orange: #f06c3e;
-  --clr-red: #ff5a5a;
-  --clr-green: #40bf40;
 
   --clr-shadow: rgba(0, 0, 0, 0.5);
 
   --ff-primary: "Poppins", Helvetica, Verdana, sans-serif;
 
-  --fs-small: 0.9375rem;
   --fs-large: 1.9rem;
   --fs-xl: 2.3rem;
 
@@ -29,7 +26,7 @@
   --space-1-5: 1.5rem;
   --space-2: 2rem;
   --space-2-5: 2.5rem;
-  --space-3-5: 3.5rem;
+  --space-3: 3rem;
 
   --border: 1px solid;
   --border-radius: 5px;
@@ -83,8 +80,9 @@ body {
   background-color: var(--clr-dark-gray);
 }
 
-main > * {
-  padding-block: 7rem;
+main > section {
+  padding-block: var(--space-3);
+  scroll-margin-top: var(--space-2);
 }
 
 h2,
@@ -103,30 +101,6 @@ i {
 
 p {
   hyphens: auto;
-}
-
-label,
-input,
-textarea {
-  font-size: var(--fs-small);
-}
-
-input,
-textarea {
-  width: 100%;
-  margin-top: var(--space-0-3);
-  padding: var(--space-0-5);
-  font-family: inherit;
-  color: inherit;
-  border-radius: var(--border-radius);
-  border: var(--border) var(--clr-light-gray);
-  background-color: var(--clr-light-gray);
-}
-
-textarea {
-  min-height: 120px;
-  vertical-align: top;
-  resize: none;
 }
 
 /* -------------------------------------------- */
@@ -152,18 +126,18 @@ textarea {
   cursor: pointer;
   border-radius: var(--border-radius);
   background-color: inherit;
+}
 
-  &:active {
-    transform: scale(0.95);
-  }
+.btn:active {
+  transform: scale(0.95);
 }
 
 .btn--orange {
   border: var(--border) var(--clr-orange);
+}
 
-  &:is(:hover, :focus) {
-    border-color: var(--clr-soft-white);
-  }
+.btn--orange:is(:hover, :focus) {
+  border-color: var(--clr-soft-white);
 }
 
 .btn--burger {

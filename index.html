@@ -43,7 +43,7 @@
 
       <section id="about">
         <h2 class="line-orange text-center">About me</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa nesciunt deleniti deserunt tempora minus voluptate accusantium totam nihil, inventore cupiditate est veritatis iure ipsam dicta assumenda pariatur molestiae sit quibusdam nam dolor sed laudantium similique quis! Tenetur nam voluptas debitis doloremque possimus soluta provident, consequuntur iure, ea, eligendi aliquam.</p>
+        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime eaque veniam molestias architecto cupiditate, deleniti beatae rerum accusantium aperiam fugiat facilis sapiente sint cumque veritatis, illum ipsum optio vel maiores consequuntur at non quod officiis iusto quas. Perferendis quia expedita quos voluptates deserunt, officiis omnis, consequatur molestiae, ducimus unde fuga.</p>
       </section>
 
       <section id="projects">
@@ -51,9 +51,9 @@
 
         <ul class="projects__container grid gap-2">
           <li class="projects__card rounded-corners">
-            <img src="https://sinnsykt.net/screenshots/shutter-journey-screen.png" alt="Screen shot of Shutter Journey website" />
+            <img src="https://sinnsykt.net/screenshots/shutter-journey-screen.png" alt="Screen shot of Shutter Journey website" class="projects__card__image" />
 
-            <div class="flow">
+            <div class="projects__card__content flow">
               <h3>Shutter journey</h3>
               <p>A photography blog with gear reviews, guides, and tips. Developed for Noroff's Project Exam 1 using HTML, CSS, and JavaScript. Powered by WordPress as a headless CMS.</p>
 
@@ -70,9 +70,9 @@
           </li>
 
           <li class="projects__card rounded-corners">
-            <img src="https://sinnsykt.net/screenshots/rainy-days-screen.png" alt="Screen shot of Rainy Days website" />
+            <img src="https://sinnsykt.net/screenshots/rainy-days-screen.png" alt="Screen shot of Rainy Days website" class="projects__card__image" />
 
-            <div class="flow">
+            <div class="projects__card__content flow">
               <h3>Rainy days</h3>
               <p>An e-commerce site for Rainy Days - a cross-course project at Noroff. Designed in Figma and developed with HTML, CSS, and JavaScript. Powered by WordPress (WooCommerce) as a headless CMS.</p>
 
@@ -89,9 +89,9 @@
           </li>
 
           <li class="projects__card rounded-corners">
-            <img src="https://sinnsykt.net/screenshots/csm-screen.png" alt="Screen shot of Community Science Museum website" />
+            <img src="https://sinnsykt.net/screenshots/csm-screen.png" alt="Screen shot of Community Science Museum website" class="projects__card__image" />
 
-            <div class="flow">
+            <div class="projects__card__content flow">
               <h3>Community science museum</h3>
               <p>A responsive website for the Community Science Museum developed during Semester 1 at Noroff. Tailored for primary and middle school children.</p>
 
@@ -111,80 +111,35 @@
 
       <section id="contact">
         <h2 class="line-orange text-center">Contact</h2>
-        <div class="contact__container grid gap-2">
-          <div class="flow">
-            <h3 class="text-large">
-              Let's chat! <span class="block">Get in touch with me<span class="text-orange">.</span></span>
-            </h3>
-            <p>Feel free to contact me using the form or hit me up on social media if you have any questions.</p>
+        <div class="grid place-items-center gap-1">
+          <p class="text-short text-center">Whether you have questions, want to discuss a project, or just feel like saying hello, I'd love to hear from you!</p>
+          <p class="text-short text-center">Feel free to reach out on social media.</p>
 
-            <ul class="flex gap-1">
-              <li>
-                <a href="https://github.com/aklevjer" target="_blank" class="link-hover" aria-label="Github">
-                  <i class="bx bxl-github bx-tada-hover"></i>
-                </a>
-              </li>
+          <ul class="flex gap-1">
+            <li>
+              <a href="https://github.com/aklevjer" target="_blank" class="link-hover" aria-label="Github">
+                <i class="bx bxl-github bx-tada-hover"></i>
+              </a>
+            </li>
 
-              <li>
-                <a href="https://www.linkedin.com/in/aklevjer/" target="_blank" class="link-hover" aria-label="LinkedIn">
-                  <i class="bx bxl-linkedin bx-tada-hover"></i>
-                </a>
-              </li>
+            <li>
+              <a href="https://codepen.io/alexfohsho" target="_blank" class="link-hover" aria-label="Codepen">
+                <i class="bx bxl-codepen bx-tada-hover"></i>
+              </a>
+            </li>
 
-              <li>
-                <a href="https://www.facebook.com/aleksander.klevjer/" target="_blank" class="link-hover" aria-label="Facebook">
-                  <i class="bx bxl-facebook-circle bx-tada-hover"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+            <li>
+              <a href="https://www.linkedin.com/in/aklevjer/" target="_blank" class="link-hover" aria-label="LinkedIn">
+                <i class="bx bxl-linkedin bx-tada-hover"></i>
+              </a>
+            </li>
 
-          <form name="contact" class="contact__form grid gap-1">
-            <div class="grid gap-1">
-              <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Name" />
-
-                <p class="error-msg items-center gap-0-3 hidden">
-                  <i class="bx bx-error bx-xs"></i>
-                  <span> Must be at least 5 characters</span>
-                </p>
-              </div>
-
-              <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="email@example.com" />
-
-                <p class="error-msg items-center gap-0-3 hidden">
-                  <i class="bx bx-error bx-xs"></i>
-                  <span>Must be a valid email address</span>
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Subject" />
-
-              <p class="error-msg items-center gap-0-3 hidden">
-                <i class="bx bx-error bx-xs"></i>
-                <span>Must be at least 15 characters</span>
-              </p>
-            </div>
-
-            <div>
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Message"></textarea>
-
-              <p class="error-msg items-center gap-0-3 hidden">
-                <i class="bx bx-error bx-xs"></i>
-                <span>Must be at least 25 characters</span>
-              </p>
-            </div>
-
-            <input type="submit" value="Send message" class="btn btn--orange" />
-            <p class="success-msg"></p>
-          </form>
+            <li>
+              <a href="https://www.facebook.com/aleksander.klevjer/" target="_blank" class="link-hover" aria-label="Facebook">
+                <i class="bx bxl-facebook-circle bx-tada-hover"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

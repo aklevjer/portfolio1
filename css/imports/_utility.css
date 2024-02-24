@@ -11,10 +11,6 @@
   display: block;
 }
 
-.hidden {
-  display: none;
-}
-
 .flex {
   display: flex;
 }
@@ -33,10 +29,6 @@
 
 .place-items-center {
   place-items: center;
-}
-
-.gap-0-3 {
-  gap: var(--space-0-3);
 }
 
 .gap-0-5 {
@@ -68,7 +60,7 @@
 }
 
 .text-short {
-  max-width: 50ch;
+  max-width: 45ch;
 }
 
 .text-white {
@@ -81,7 +73,7 @@
 
 .line-orange {
   position: relative;
-  margin-bottom: var(--space-3-5);
+  margin-bottom: var(--space-3);
 }
 
 .line-orange::after {

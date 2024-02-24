@@ -9,21 +9,27 @@
     position: static;
     width: fit-content;
     border: 0;
+  }
 
-    & ul {
-      display: flex;
-      gap: var(--space-1-5);
+  .header__nav ul {
+    display: flex;
+    gap: var(--space-1-5);
+  }
 
-      & li {
-        height: auto !important;
-        margin: 0 !important;
-        overflow: visible;
-        transition: none;
-      }
-    }
+  .header__nav li {
+    height: auto !important;
+    margin: 0 !important;
+    overflow: visible;
+    transition: none;
   }
 
   .btn--burger {
     display: none;
+  }
+
+  /* ----------------- Sections ----------------- */
+
+  main > section {
+    padding-block: 7rem;
   }
 }
