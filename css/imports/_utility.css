@@ -39,8 +39,8 @@
   gap: var(--space-1);
 }
 
-.gap-2 {
-  gap: var(--space-2);
+.gap-1-5 {
+  gap: var(--space-1-5);
 }
 
 .flow > * + * {
@@ -60,7 +60,7 @@
 }
 
 .text-short {
-  max-width: 45ch;
+  max-width: 50ch;
 }
 
 .text-white {
