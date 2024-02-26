@@ -61,6 +61,14 @@ footer {
 /*                   Sections                   */
 /* -------------------------------------------- */
 
+/* ------------------- About ------------------ */
+
+.about__image {
+  max-width: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--clr-light-gray);
+}
+
 /* ----------------- Projects ----------------- */
 
 .projects__container {
@@ -82,6 +90,6 @@ footer {
 
 .projects__card__image {
   width: 100%;
-  height: 220px;
+  height: 200px;
   object-position: top;
 }

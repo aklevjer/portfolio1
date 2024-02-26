@@ -32,4 +32,16 @@
   main > section {
     padding-block: 7rem;
   }
+
+  /* ------------------- About ------------------ */
+
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__image {
+    max-width: none;
+    grid-area: 1 / 2;
+    justify-self: end;
+  }
 }

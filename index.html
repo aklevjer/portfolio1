@@ -21,7 +21,7 @@
 
         <nav class="header__nav">
           <ul>
-            <li><a href="#" class="link-hover current">Home</a></li>
+            <li><a href="#" class="link-hover">Home</a></li>
             <li><a href="#about" class="link-hover">About</a></li>
             <li><a href="#projects" class="link-hover">Projects</a></li>
             <li><a href="#contact" class="link-hover">Contact</a></li>
@@ -35,15 +35,49 @@
     </header>
 
     <main class="container">
-      <section id="home" class="grid place-items-center gap-1">
-        <h2 class="text-center">Hello there! I'm Aleksander<span class="text-orange">.</span></h2>
-        <p class="text-short text-center">A front-end development student with a deep passion for learning and mastering new technologies.</p>
-        <a href="#contact" class="btn btn--orange">Contact me</a>
+      <section id="home">
+        <div class="grid place-items-center gap-1">
+          <h2 class="text-center">Hello there! I'm Aleksander<span class="text-orange">.</span></h2>
+          <p class="text-short text-center">A front-end development student with a deep passion for learning and mastering new technologies.</p>
+          <a href="#contact" class="btn btn--orange">Contact me</a>
+        </div>
       </section>
 
       <section id="about">
         <h2 class="line-orange text-center">About me</h2>
-        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime eaque veniam molestias architecto cupiditate, deleniti beatae rerum accusantium aperiam fugiat facilis sapiente sint cumque veritatis, illum ipsum optio vel maiores consequuntur at non quod officiis iusto quas. Perferendis quia expedita quos voluptates deserunt, officiis omnis, consequatur molestiae, ducimus unde fuga.</p>
+        <div class="about__container grid place-items-center gap-1-5">
+          <img src="/images/about.jpg" alt="Black and white headshot of Aleksander Klevjer" class="about__image" />
+
+          <div class="flow">
+            <p>
+              Hey, I'm Aleksander, a 33-year-old from Porsgrunn, Norway. 
+              Having spent over a decade working as a chef, in early 2023, 
+              I felt it was time to change things around.
+            </p>
+            <p>
+              With a lifelong passion for IT, in the Spring of 2023, I enrolled in
+              <a href="https://www.noroff.no/" target="_blank" class="link-hover">Noroff's</a>
+              front-end development course, following my dream to turn my passion into a fulfilling career.
+            </p>
+            <p>
+              While my core knowledge lies in
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="link-hover">HTML</a>,
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="link-hover">CSS</a>, and
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="link-hover">JavaScript</a>,
+              I've also been delving into
+              <a href="https://www.php.net/" target="_blank" class="link-hover">PHP</a>,
+              <a href="https://www.mysql.com/" target="_blank" class="link-hover">SQL</a>,
+              <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank" class="link-hover">C#</a>,
+              <a href="https://www.cplusplus.com/" target="_blank" class="link-hover">C++</a>,
+              <a href="https://www.cprogramming.com/" target="_blank" class="link-hover">C</a>,
+              <a href="https://www.lua.org/" target="_blank" class="link-hover">Lua</a>,
+              <a href="https://reactjs.org/" target="_blank" class="link-hover">React</a>,
+              <a href="https://tailwindcss.com/" target="_blank" class="link-hover">TailwindCSS</a>, and
+              <a href="https://sass-lang.com/" target="_blank" class="link-hover">SCSS</a>
+              on a hobbyist basis.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="projects">
