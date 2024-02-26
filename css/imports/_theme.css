@@ -17,7 +17,6 @@
   --fs-large: 1.9rem;
   --fs-xl: 2.3rem;
 
-  --fw-medium: 500;
   --fw-semibold: 600;
 
   --space-0-3: 0.3rem;
@@ -60,6 +59,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
   object-fit: cover;
 }
 
@@ -109,14 +109,13 @@ p {
 
 .link-hover,
 .btn {
-  font-weight: var(--fw-medium);
+  width: fit-content;
+  font-weight: var(--fw-semibold);
   text-transform: capitalize;
   transition: color var(--tr-linear), border-color var(--tr-linear);
 }
 
-.current,
-.current:is(:hover, :focus),
-.link-hover:is(:hover, :focus) {
+.link-hover:hover {
   color: var(--clr-orange);
 }
 
@@ -136,7 +135,7 @@ p {
   border: var(--border) var(--clr-orange);
 }
 
-.btn--orange:is(:hover, :focus) {
+.btn--orange:hover {
   border-color: var(--clr-soft-white);
 }
 
