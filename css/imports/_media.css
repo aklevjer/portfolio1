@@ -9,6 +9,7 @@
     position: static;
     width: fit-content;
     border: 0;
+    box-shadow: none;
   }
 
   .header__nav ul {

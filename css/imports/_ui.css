@@ -32,6 +32,7 @@ footer {
   top: calc(var(--height-header) - var(--space-0-5));
   left: 0;
   width: 100%;
+  box-shadow: 0 20px 20px -6px var(--clr-shadow);
   background-color: var(--clr-gray);
   z-index: 2;
 }
@@ -42,6 +43,10 @@ footer {
   text-align: center;
   overflow: hidden;
   transition: height var(--tr-ease);
+}
+
+.header__nav a {
+  font-weight: var(--fw-medium);
 }
 
 .header__nav--open {
@@ -85,7 +90,7 @@ footer {
 }
 
 .projects__card > :not(:first-child) {
-  padding-inline: var(--space-1);
+  margin-inline: var(--space-1);
 }
 
 .projects__card__image {
