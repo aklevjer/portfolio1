@@ -3,9 +3,10 @@
 /* -------------------------------------------- */
 
 :root {
+  --clr-gray: #262626;
   --clr-dark-gray: #212121;
   --clr-light-gray: #363636;
-  --clr-gray: #262626;
+  --clr-lighter-gray: #4e4e4e;
   --clr-soft-white: #e5e5e5;
   --clr-white: #ffffff;
   --clr-orange: #f06c3e;
@@ -14,6 +15,7 @@
 
   --ff-primary: "Poppins", Helvetica, Verdana, sans-serif;
 
+  --fw-light: 300;
   --fw-medium: 500;
   --fw-semibold: 600;
 
@@ -98,6 +100,8 @@ i {
 }
 
 p {
+  font-weight: var(--fw-light);
+  line-height: 1.7;
   hyphens: auto;
 }
 
@@ -108,7 +112,7 @@ p {
 .link-hover,
 .btn {
   width: fit-content;
-  font-weight: var(--fw-semibold);
+  font-weight: var(--fw-medium);
   text-transform: capitalize;
   transition: color var(--tr-linear), border-color var(--tr-linear);
 }
