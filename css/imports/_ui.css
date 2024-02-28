@@ -45,10 +45,6 @@ footer {
   transition: height var(--tr-ease);
 }
 
-.header__nav a {
-  font-weight: var(--fw-medium);
-}
-
 .header__nav--open {
   border-bottom: var(--border) var(--clr-light-gray);
 }
@@ -78,6 +74,7 @@ footer {
 
 .projects__container {
   grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: var(--space-2) var(--space-1);
 }
 
 .projects__card {
@@ -86,7 +83,12 @@ footer {
   overflow: hidden;
   box-shadow: 0 0 20px var(--clr-shadow);
   border: var(--border) var(--clr-light-gray);
+  transition: border-color var(--tr-linear);
   background-color: var(--clr-gray);
+}
+
+.projects__card:hover {
+  border-color: var(--clr-lighter-gray);
 }
 
 .projects__card > :not(:first-child) {
